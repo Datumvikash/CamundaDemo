@@ -1,0 +1,362 @@
+{
+  "components": [
+    {
+      "text": "<h2>Befund prüfen",
+      "type": "text",
+      "layout": {
+        "row": "Row_16fsn3m",
+        "columns": null
+      },
+      "id": "Field_1t2p8jk"
+    },
+     {
+      "label": "",
+      "components": [
+        {
+          "text": "Projekt-Id ",
+          "type": "text",
+          "layout": {
+            "row": "Row_0ab7lni",
+            "columns": null
+          },
+          "id": "Field_0fq8873"
+        },
+        {
+          "label": "",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_0ab7lni",
+            "columns": null
+          },
+          "id": "Field_1fixk4b",
+          "key": "projektId",
+          "readonly": true
+        },
+        {
+          "text": "Auftragsvolumen in kCHF",
+          "type": "text",
+          "layout": {
+            "row": "Row_02zttak",
+            "columns": null
+          },
+          "id": "Field_1bcrkgh"
+        },
+        {
+          "label": "",
+          "type": "number",
+          "layout": {
+            "row": "Row_02zttak",
+            "columns": null
+          },
+          "id": "Field_0d8lhgd",
+          "key": "auftragsvolumenInCHF",
+          "readonly": true
+        },
+        {
+          "text": "Bezirke",
+          "type": "text",
+          "layout": {
+            "row": "Row_09j6tmy",
+            "columns": null
+          },
+          "id": "Field_1tbmyug"
+        },
+        {
+          "label": "",
+          "values": [
+            {
+              "label": "Appenzell",
+              "value": "Appenzell"
+            },
+            {
+              "label": "Schwende-Rüte",
+              "value": "Schwende-Rüte"
+            },
+            {
+              "label": "Schlatt-Haslen",
+              "value": "Schlatt-Haslen"
+            },
+            {
+              "label": "Gonten",
+              "value": "Gonten"
+            },
+            {
+              "label": "Oberegg",
+              "value": "Oberegg"
+            }
+          ],
+          "type": "select",
+          "layout": {
+            "row": "Row_09j6tmy",
+            "columns": null
+          },
+          "id": "Field_1wt144y",
+          "key": "bezirkeGroup",
+          "readonly": true
+        },
+        {
+          "text": "Beschreibung",
+          "type": "text",
+          "layout": {
+            "row": "Row_188y1jb",
+            "columns": null
+          },
+          "id": "Field_1givndk"
+        },
+        {
+          "label": "",
+          "type": "textarea",
+          "layout": {
+            "row": "Row_188y1jb",
+            "columns": null
+          },
+          "id": "Field_1yv0ivs",
+          "key": "beschreibung",
+          "readonly": true
+        },
+        {
+          "text": "Deadline",
+          "type": "text",
+          "layout": {
+            "row": "Row_0tgsgfh",
+            "columns": null
+          },
+          "id": "Field_0w7814k"
+        },
+        {
+          "subtype": "date",
+          "dateLabel": "",
+          "type": "datetime",
+          "layout": {
+            "row": "Row_0tgsgfh",
+            "columns": null
+          },
+          "id": "Field_0z3gz2x",
+          "key": "deadline",
+          "readonly": true
+        },
+        {
+          "text": "File-Uploads",
+          "type": "text",
+          "layout": {
+            "row": "Row_0k0ryql",
+            "columns": null
+          },
+          "id": "Field_1dpnup3"
+        },
+        {
+          "label": "",
+          "type": "documentPreview",
+          "layout": {
+            "row": "Row_0k0ryql",
+            "columns": null
+          },
+          "id": "Field_0xqqgdw",
+          "dataSource": "=fileUploadsFirstUserTask"
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_17dsrak",
+        "columns": null
+      },
+      "id": "Field_0dxo52n"
+    },
+    {
+      "label": "",
+      "components": [
+        {
+          "text": "Gesuchsteller",
+          "type": "text",
+          "layout": {
+            "row": "Row_1k46cvj",
+            "columns": null
+          },
+          "id": "Field_1qf61fw"
+        },
+        {
+          "label": "",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_1k46cvj",
+            "columns": null
+          },
+          "id": "Field_0ith2ys",
+          "key": "gesuchsteller",
+          "readonly": true
+        },
+        {
+          "text": "Kontakt person E-mail",
+          "type": "text",
+          "layout": {
+            "row": "Row_02oo0is",
+            "columns": null
+          },
+          "id": "Field_0oteyib"
+        },
+        {
+          "label": "",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_02oo0is",
+            "columns": null
+          },
+          "id": "Field_16gnhgv",
+          "key": "kontaktPersonEmail",
+          "readonly": true
+        },
+        {
+          "text": "Priorität",
+          "type": "text",
+          "layout": {
+            "row": "Row_04q59vd",
+            "columns": null
+          },
+          "id": "Field_0h4j73g"
+        },
+        {
+          "label": "",
+          "values": [
+            {
+              "label": "Hoch",
+              "value": "Hoch"
+            },
+            {
+              "label": "Mittel",
+              "value": "Mittel"
+            },
+            {
+              "label": "Niedrig",
+              "value": "Niedrig"
+            }
+          ],
+          "type": "select",
+          "layout": {
+            "row": "Row_04q59vd",
+            "columns": null
+          },
+          "id": "Field_0eey7au",
+          "key": "priority",
+          "readonly": true
+        },
+        {
+          "text": "Kategorie der Anpassung",
+          "type": "text",
+          "layout": {
+            "row": "Row_16s0yhi",
+            "columns": null
+          },
+          "id": "Field_17in01r"
+        },
+        {
+          "label": "",
+          "values": [
+            {
+              "label": "Zonenplan",
+              "value": "Zonenplan"
+            },
+            {
+              "label": "Baulinien",
+              "value": "Baulinien"
+            },
+            {
+              "label": "Landschaftsschutz",
+              "value": "Landschaftsschutz"
+            }
+          ],
+          "type": "select",
+          "layout": {
+            "row": "Row_16s0yhi",
+            "columns": null
+          },
+          "id": "Field_11xvvqd",
+          "key": "kategorieDerAnpassung",
+          "readonly": true
+        },
+        {
+          "text": "Genehmigungsstatus",
+          "type": "text",
+          "layout": {
+            "row": "Row_0ey4yxj",
+            "columns": null
+          },
+          "id": "Field_061t8qs"
+        },
+        {
+          "label": "",
+          "values": [
+            {
+              "label": "Interne Freigabe erforderlich",
+              "value": "Interne Freigabe erforderlich"
+            }
+          ],
+          "type": "select",
+          "layout": {
+            "row": "Row_0ey4yxj",
+            "columns": null
+          },
+          "id": "Field_0a8cg6r",
+          "key": "Genehmigungsstatus",
+          "readonly": true
+        },
+        {
+          "text": "Geografische Referenz",
+          "type": "text",
+          "layout": {
+            "row": "Row_0oajcl0",
+            "columns": null
+          },
+          "id": "Field_15m4nuu"
+        },
+        {
+          "label": "",
+          "type": "textfield",
+          "layout": {
+            "row": "Row_0oajcl0",
+            "columns": null
+          },
+          "id": "Field_04646ti",
+          "key": "geografischeReferenz",
+          "readonly": true
+        },
+        {
+          "text": "Bemerkungen / interne Notizen",
+          "type": "text",
+          "layout": {
+            "row": "Row_0f1q9nn",
+            "columns": null
+          },
+          "id": "Field_1ldzopo"
+        },
+        {
+          "label": "",
+          "type": "textarea",
+          "layout": {
+            "row": "Row_0f1q9nn",
+            "columns": null
+          },
+          "id": "Field_1tbjm2q",
+          "key": "bemerkungen",
+          "readonly": true
+        }
+      ],
+      "showOutline": true,
+      "type": "group",
+      "layout": {
+        "row": "Row_17zh8iu",
+        "columns": null
+      },
+      "id": "Field_181f62t"
+    }
+  ],
+  "type": "default",
+  "id": "Activity_0j4k6kq",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.7.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.38.1"
+  },
+  "schemaVersion": 19
+}

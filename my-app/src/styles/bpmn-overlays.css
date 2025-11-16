@@ -1,0 +1,61 @@
+/* Remove default BPMN-JS overlays (blue tick etc.) */
+.djs-visual .djs-marker-active path,
+.djs-visual .djs-marker-completed path,
+.djs-visual .djs-marker-canceled path {
+  fill: none !important;
+  stroke: inherit !important;
+}
+
+/* Active node (Green border only) */
+.highlight-active rect,
+.highlight-active polygon,
+.highlight-active circle,
+.highlight-active ellipse {
+  stroke: #27f408da !important;
+  stroke-width: 1px !important;
+  fill: none !important;
+}
+
+/* Completed node (Blue border only) */
+.highlight-completed rect,
+.highlight-completed polygon,
+.highlight-completed circle,
+.highlight-completed ellipse {
+  stroke: #2196f3 !important;
+  stroke-width: 1px !important;
+  fill: none !important;
+}
+
+/* Incident node (Orange border only) */
+.highlight-incident rect,
+.highlight-incident polygon,
+.highlight-incident circle,
+.highlight-incident ellipse {
+  stroke: #e82e09 !important;
+  stroke-width: 1px !important;
+  fill: none !important;
+}
+
+/* Canceled node (Red border only) */
+.highlight-canceled rect,
+.highlight-canceled polygon,
+.highlight-canceled circle,
+.highlight-canceled ellipse {
+  stroke: #f44336 !important;
+  stroke-width: 1px !important;
+  fill: none !important;
+}
+
+.highlight-flow path {
+  stroke: #2196f3 !important;
+  stroke-width: 1px !important;
+  fill: none !important;
+
+}
+
+/* ✅ Force arrowheads to blue as well */
+svg defs marker[id^="sequenceflow-end"] path {
+  fill: #2196f3 !important;
+  stroke: #2196f3 !important;
+}
+

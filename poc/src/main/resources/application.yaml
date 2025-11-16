@@ -1,0 +1,15 @@
+server:
+  port: 8090
+
+camunda:
+  client:
+    mode: selfManaged
+    operate:
+      base-url: http://63.178.79.202:8081
+    zeebe:
+      grpc-address: http://63.178.79.202:26500
+      rest-address: http://63.178.79.202:8088
+    auth:
+      client-id: springboot
+      client-secret: ZOYApXsJ42h9Z5fApelhRWygbEIAXAP8
+      token-url: http://63.178.79.202:18080/auth/realms/camunda-platform/protocol/openid-connect/token

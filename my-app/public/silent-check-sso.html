@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Silent Check SSO</title>
+  </head>
+  <body>
+    <script>
+      // Keycloak expects this exact message format
+      window.parent.postMessage("kc:silent-check-sso", window.origin);
+    </script>
+  </body>
+</html>
